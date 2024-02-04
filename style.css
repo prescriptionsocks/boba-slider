@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'Druk';
+    src: url(Fonts/DrukCond-Super-Trial.otf);
+}
+/* Apply a CSS reset to remove paddings and set box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.section {
+    width: 100%;
+    height: 100vh;
+    background-color: honeydew;
+}
+
+.track, .list{
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    border: 2px red solid;
+}
+
+.slider-bg{
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    bottom: 0%;
+    background-color: #FFC108;
+    z-index: 50;
+}
+
+.slide {
+    background-color: grey;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.slide-heading{
+    font-family: 'Druk';
+    font-size: 16vw;
+    text-transform:uppercase;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.slide-heading-top{
+    margin-bottom: -5rem;
+}
+
+.slide-heading-bottom{
+    margin-top: -5rem;
+}
+
+.mango-heading{
+    color: #EA1B0E;
+}
+
+.churro-heading{
+    color: #BF4C6B;
+}
+
+.coffee-heading{
+    color: #604442;
+}
+
+.ube-heading{
+    color: #B595BF;
+}
+
+.banana-heading{
+    color: #FFC108;
+}
+
+.strawberry-heading{
+    color: #EF1525;
+}
+
+.slide-image{
+    height: 40%;
+    width: 75%;
+    background-color: beige;
+    flex: 0 0 auto;
+    position: relative;
+    z-index: 5;
+    object-fit: cover;
+}
+
+.slide-flavour{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    width: auto;
+    height: 32%;
+}
